@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+
+<h1>Este es el ejercicio 8 utilizando Java Script</h1>
+
+
+
+<script>
+
+var palabra = prompt("Introduce una palabra ");
+var resultado = info(palabra);
+
+function info(palabra) {
+ 
+  var resultado = "La cadena \""+palabra+"\" ";
+ 
+  // Comprobar mayúsculas y minúsculas
+  if(palabra == palabra.toUpperCase()) {
+    resultado += " está formada sólo por mayúsculas";
+  }
+  else if(palabra == palabra.toLowerCase()) {
+    resultado += " está formada sólo por minúsculas";
+  }
+  else {
+    resultado += " está formada por mayúsculas y minúsculas";
+  }
+ 
+  return resultado;
+}
+ 
+alert(info(+resultado));
+alert(info("En un lugar de la mancha..."));
+
+
+</script>
+
+
+
+
+</body>
+</html>
